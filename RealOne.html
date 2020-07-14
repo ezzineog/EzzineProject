@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
-<title>og.CSS Template</title>
-<meta charset="UTF-8">
+<head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="RealOne.css">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<title>og.CSS Template</title>
+
 
 
 <style>
@@ -63,17 +66,15 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   <!-- Header/Home -->
   <header class="og-container og-padding-32 og-center og-black" id="home">
     <h1 class="og-jumbo"><span class="og-hide-small">I'm</span> Ezzine Ahmed Taha</h1>
-    <p>  Web Designer and a future  </p>
-    <img src="https://avatars1.githubusercontent.com/u/65934232?s=460&u=f3d53fb95bb02864dc4a33ee0a628d5646fc6772&v=4" alt="boy" class="og-image" width="992" height="1108">
+    <p>  Web Designer and a future CEO <code>Ezzine's</code> Company </p>
+    <img  src="https://avatars1.githubusercontent.com/u/65934232?s=460&u=f3d53fb95bb02864dc4a33ee0a628d5646fc6772&v=4" alt="boy" class="og-image test" width="992" height="1108">
   </header>
 
   <!-- About Section -->
   <div class="og-content og-justify og-text-grey og-padding-64" id="about">
-    <h2 class="og-text-light-grey">My Name</h2>
+    <h2 class="og-text-light-grey">Ezzine's  world</h2>
     <hr style="width:200px" class="og-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-      ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-      adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>let me introduce my self, my name is Ahmed Taha Ezzine i'm 16 year's old I'm a software engineer, industrial designer, technology entrepreneur and philanthropist s, ranked 21st on the Forbes list of The World's Most Powerful People, founder, CEO, CTO and chief designer of " Ezzine's "early investor.
     </p>
 
            <script>
@@ -82,47 +83,130 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 //     $("p").append(" <b>Appended text</b>.");
 //   });
 
+// $(document).ready(function() {
+       
+//     $("#btn-next").click(function() {
+//         // var domElement = $('<p>hello</p>'); 
+//          $('.og-addNew').append(' <p class="og-wide">Boost skills</p>   <div class="og-white">  <div class="og-dark-grey" style="height:28px;width:95%"></div></div>');
+//     });
+    
+// });
 $(document).ready(function() {
        
-    $("#btn-next").onclick(function() {
-        // var domElement = $('<p>hello</p>'); 
-         $('.og-addNew').append('<p>hello</p>');
+    $("#btn-next").click(function() {
+         $('.og-addNew').slideToggle(5000);
     });
     
 });
 
-   
+$('.test').mouseover(function(){
+    $(this).addClass('flipped');
+}).mouseleave(function(){
+    $(this).removeClass('flipped');
+});
 
+$(document).ready(function() {
+       
+    $("#btn-sec").click(function() {
+         $('.og-section').slideToggle(5000);
+    });
+    
+});
+
+// $(document).ready(function() {
+       
+//     $("#add").click(function() {
+//            location.replace("file:///C:/Users/utamk/Desktop/Project/addskill.html")
+//     });
+    
+// });
+
+// $(document).ready(function (){
+
+//   $(".skill").click(function    (){
+//     var skill = $('#ski').val();
+//     var prc = $('#percent').val();
+ 
+//      $(".og-addNew").append('<p class="og-wide">'+ skill +'</p><div class="og-white"> <div class="og-dark-grey" style="height:28px;width:'+per+'%"></div> </div>');
+    
+
+      
+
+ // });
+//    });
+// $(document).ready(function(){
+//   $("#skill").click(function(){
+//     $(".og-row-padding").animate({left: '2500px'});
+//     $('.og-row-padding').hide()
+//   });
+// });
+$(document).ready(function(){
+  $("#HIDE").click(function(){
+   
+    $('#photos').fadeOut(4000)
+  });
+});
+$(document).ready(function(){
+  $("#SHOW").click(function(){
+   
+    $('#photos').fadeIn(4000)
+  });
+});
+
+// $(document).ready(function(){
+//   $(".btnleft").click(function(){
+//     $(".lefft").animate({left: '250px'});
+//   });
+// });
 
            </script>
 
 
- <div class="og-addNew">     
 
-<button id="btn-next">nchalah te5dem</button>
+ <div class="og-addNew">     
+<!-- 
+  <input id="ski" type="input" name="name">
+  <input id="percent" type="input" name="percent">
+
+  <button id="skill">ADD</button> -->
+
 
 
 
 <!-- <input id="something" type="input" name="enter"> -->
+ <!-- <button class="btnleft">jj</button> -->
 
-
-  <h3 class="og-padding-16 og-text-light-grey">My Skills</h3>
+  <h3  id="btn-next"class="og-padding-16 og-text-light-grey">My Skills</h3>
     <p class="og-wide">Boost skills</p>
 
-    <div class="og-white">
+
+   <div class="og-white">
       <div class="og-dark-grey" style="height:28px;width:95%"></div>
     </div>
 
+
+   <a id="lefft">
     <p class="og-wide">Web Design</p>
 
     <div class="og-white">
       <div class="og-dark-grey" style="height:28px;width:85%"></div>
     </div>
-
-    <p class="og-wide">every Thing</p>
+</a>
+    <p class="og-wide">Web DEV</p>
 
     <div class="og-white">
       <div class="og-dark-grey" style="height:28px;width:80%"></div>
+    </div>
+
+     <p class="og-wide">every Thing</p>
+      <div class="og-white">
+      <div class="og-dark-grey" style="height:28px;width:55%"></div>
+    </div>
+
+
+     <p class="og-wide">every Thing</p>
+      <div class="og-white">
+      <div class="og-dark-grey" style="height:28px;width:55%"></div>
     </div>
     <br>
 
@@ -165,7 +249,7 @@ $(document).ready(function() {
           <li class="og-padding-16">5GB Storage</li>
           <li class="og-padding-16">Mail Support</li>
           <li class="og-padding-16">
-            <h2>$ 10</h2>
+            <h2>$ 100</h2>
             <span class="og-opacity">per month</span>
           </li>
           <li class="og-light-grey og-padding-24">
@@ -180,9 +264,9 @@ $(document).ready(function() {
           <li class="og-padding-16">Web Design</li>
           <li class="og-padding-16">Photography</li>
           <li class="og-padding-16">50GB Storage</li>
-          <li class="og-padding-16">Endless Support</li>
+          <li class="og-padding-16">Every thing else</li>
           <li class="og-padding-16">
-            <h2>$ 25</h2>
+            <h2>$ 2500</h2>
             <span class="og-opacity">per month</span>
           </li>
           <li class="og-light-grey og-padding-24">
@@ -208,30 +292,36 @@ $(document).ready(function() {
     <!-- Testimonials -->
     <h3 class="og-padding-24 og-text-light-grey">My Reputation</h3>  
     <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/94340947_116248386722745_6478691006165286912_n.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=5QIGUFXOrYEAX9Z0ER-&_nc_ht=scontent.ftun4-1.fna&oh=63452cd04ad2d22f213d1567bb8dd3ef&oe=5F308A3F" alt="Avatar" class="og-left og-circle og-margin-right" style="width:80px">
-    <p><span class="og-large og-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
-    <p>John Doe saved us from a web disaster.</p><br>
+    <p><span class="og-large og-margin-right">Chris Fox.</span> CEO at Ezzine's Company.</p>
+    <p>The best, Web dev , diseign company.</p><br>
     
   <!-- End About Section -->
   </div>
   
   <!-- Portfolio Section -->
+   <button class="btnsstyle" id="HIDE">Hide Photos</button>
+<button class="btnsstyle" id="SHOW">Show Photos</button>
+  <h2 class="og-text-light-grey og-content">My Photos</h2>
+
+    <hr style="width:200px" class="og-opacity og-content ">
   <div class="og-padding-64 og-content" id="photos">
-    <h2 class="og-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="og-opacity">
+
+  
 
     <!-- Grid for photos -->
     <div class="og-row-padding" style="margin:0 -16px">
+
       <div class="og-half">
-        <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/94340947_116248386722745_6478691006165286912_n.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=5QIGUFXOrYEAX9Z0ER-&_nc_ht=scontent.ftun4-1.fna&oh=63452cd04ad2d22f213d1567bb8dd3ef&oe=5F308A3F" style="width:50%">
-        <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/94340947_116248386722745_6478691006165286912_n.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=5QIGUFXOrYEAX9Z0ER-&_nc_ht=scontent.ftun4-1.fna&oh=63452cd04ad2d22f213d1567bb8dd3ef&oe=5F308A3F" style="width:50%">
-        <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/94340947_116248386722745_6478691006165286912_n.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=5QIGUFXOrYEAX9Z0ER-&_nc_ht=scontent.ftun4-1.fna&oh=63452cd04ad2d22f213d1567bb8dd3ef&oe=5F308A3F" style="width:50%">
+        <img  src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/97479699_699588787443621_4674201603882876928_n.jpg?_nc_cat=106&_nc_sid=b96e70&_nc_ohc=Er8yWCuAqp8AX9lLKVn&_nc_ht=scontent.ftun4-1.fna&_nc_tp=7&oh=f39988e7f9f2fe467015b12ec66df4b4&oe=5F312DA5" class="tesst" style="width:50%">
+        <img class="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/97780828_1165166327157268_7814624344314740736_n.jpg?_nc_cat=110&_nc_sid=b96e70&_nc_ohc=2sHwUTDxuPUAX98CN0T&_nc_ht=scontent.ftun4-1.fna&_nc_tp=7&oh=9cca006e0e3f282edb52f63784a4ded1&oe=5F30F5BE" style="width:50%">
+        <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/97975048_670353010415116_1624667664288841728_n.jpg?_nc_cat=103&_nc_sid=b96e70&_nc_ohc=NfSbCGmnv50AX9Ga5kd&_nc_ht=scontent.ftun4-1.fna&_nc_tp=7&oh=de1b3c5e0db91b9b70c1a70ee83af987&oe=5F32202E" style="width:50%">
       </div>
 
       <div class="og-half">
-        <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/94340947_116248386722745_6478691006165286912_n.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=5QIGUFXOrYEAX9Z0ER-&_nc_ht=scontent.ftun4-1.fna&oh=63452cd04ad2d22f213d1567bb8dd3ef&oe=5F308A3F" style="width:50%">
-        <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/94340947_116248386722745_6478691006165286912_n.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=5QIGUFXOrYEAX9Z0ER-&_nc_ht=scontent.ftun4-1.fna&oh=63452cd04ad2d22f213d1567bb8dd3ef&oe=5F308A3F" style="width:50%">
-        <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/94340947_116248386722745_6478691006165286912_n.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=5QIGUFXOrYEAX9Z0ER-&_nc_ht=scontent.ftun4-1.fna&oh=63452cd04ad2d22f213d1567bb8dd3ef&oe=5F308A3F" style="width:50%">
-        <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/94340947_116248386722745_6478691006165286912_n.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=5QIGUFXOrYEAX9Z0ER-&_nc_ht=scontent.ftun4-1.fna&oh=63452cd04ad2d22f213d1567bb8dd3ef&oe=5F308A3F" style="width:50%">
+        <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/97203443_269812717730053_3897278883740778496_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_ohc=jhzJDM8oFtIAX_7sy5a&_nc_ht=scontent.ftun4-1.fna&_nc_tp=7&oh=19d2780c42ecd6804b41b003fa0dd8af&oe=5F32C0EA" style="width:50%">
+        <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.15752-9/s2048x2048/97281292_269585060833361_6768720483987750912_n.jpg?_nc_cat=109&_nc_sid=b96e70&_nc_ohc=t1gkiFBu-sIAX8ezZMP&_nc_ht=scontent.ftun4-1.fna&_nc_tp=7&oh=de02b32a84b29623b92b93febd10cfab&oe=5F30EA4E" style="width:50%">
+     <!--    <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/94340947_116248386722745_6478691006165286912_n.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=5QIGUFXOrYEAX9Z0ER-&_nc_ht=scontent.ftun4-1.fna&oh=63452cd04ad2d22f213d1567bb8dd3ef&oe=5F308A3F" style="width:50%">
+        <img src="https://scontent.ftun4-1.fna.fbcdn.net/v/t1.0-9/94340947_116248386722745_6478691006165286912_n.jpg?_nc_cat=106&_nc_sid=7aed08&_nc_ohc=5QIGUFXOrYEAX9Z0ER-&_nc_ht=scontent.ftun4-1.fna&oh=63452cd04ad2d22f213d1567bb8dd3ef&oe=5F308A3F" style="width:50%"> -->
       </div>
     <!-- End photo grid -->
     </div>
@@ -240,23 +330,28 @@ $(document).ready(function() {
 
   <!-- Contact Section -->
   <div class="og-padding-64 og-content og-text-grey" id="contact">
-    <h2 class="og-text-light-grey">Contact Me</h2>
+    <h2 id="btn-sec" class="og-text-light-grey">Contact Me</h2>
     <hr style="width:200px" class="og-opacity">
 
     <div class="og-section">
-      <p><i class="fa fa-map-marker fa-fw og-text-white og-xxlarge og-margin-right"></i> Chicago, US</p>
-      <p><i class="fa fa-phone fa-fw og-text-white og-xxlarge og-margin-right"></i> Phone: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw og-text-white og-xxlarge og-margin-right"> </i> Email: mail@mail.com</p>
+      <p><i class="fa fa-map-marker fa-fw og-text-white og-xxlarge og-margin-right"></i> ENKHILLETT, TN</p>
+      <p><i class="fa fa-phone fa-fw og-text-white og-xxlarge og-margin-right"></i> Phone: +216 29 630 948</p>
+      <p><i class="fa fa-envelope fa-fw og-text-white og-xxlarge og-margin-right"> </i> Email: ezzineahmedtaha@gmail.com</p>
     </div><br>
-    <p>Let's get in touch. Send me a message:</p>
+    <!-- <p>Let's get in touch. Send me a message:</p> -->
 
   <!-- End Contact Section -->
   </div>
   
     <!-- Footer -->
   <footer class="og-content og-padding-64 og-text-grey og-xlarge">
-    <i class="fa fa-facebook-official og-hover-opacity"></i>
-    <i class="fa fa-instagram og-hover-opacity"></i>
+    <a href="https://www.facebook.com/ezzine.og">
+        <i class="fa fa-facebook-official og-hover-opacity"></i>
+    </a>
+   <a href="https://www.instagram.com/ezzine.og/">
+     <i class="fa fa-instagram og-hover-opacity"></i>
+   </a>
+    
     <i class="fa fa-snapchat og-hover-opacity"></i>
     <i class="fa fa-pinterest-p og-hover-opacity"></i>
     <i class="fa fa-twitter og-hover-opacity"></i>
@@ -267,6 +362,6 @@ $(document).ready(function() {
 
 <!-- END PAGE CONTENT -->
 </div>
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
 </body>
 </html>
